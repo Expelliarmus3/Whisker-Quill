@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+.header-left{
+    position: absolute;
+    top: 79px;   
+    left: 188px; 
+    z-index: 2;
+    
+
+    color: whitesmoke;
+    font-family: 'Outfit',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+.header-container {
+  position: relative; /* Essential: keeps the text inside this box */
+  width: 889px;        /* Matches your SVG width */
+  height: 243px;       /* Matches your SVG height */
+  
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Keeps the shape in the back */
+}
+
+
