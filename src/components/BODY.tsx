@@ -3,6 +3,9 @@ import '../index.css';
 export default function BODY(){
     return(
         <>
+        <div style={{ height: '300vh', padding: '20px' }}>
+            
+        </div>
         <svg viewBox="0 0 1116 3295" fill="none" xmlns="http://www.w3.org/2000/svg" className='box'>
                     <g opacity="0.5" filter="url(#filter0_f_7_14)">
                         <rect x="4" width="1108" height="3295" fill="#D59C5F" fill-opacity="0.68"/>

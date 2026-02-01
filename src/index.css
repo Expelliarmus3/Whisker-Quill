@@ -2,49 +2,67 @@
 @import  url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
 
 
-header{
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+/* 1. The Container - This stays stuck */
+.sticky-header {
+    position: sticky;
+    top: -100px; /* Moves up 100px then sticks. Adjust to your liking. */
+    z-index: 1000;
+    width: 100%;
+    height: 243px; 
+    /* Remove 'display: flex' from the parent header tag to let children stack */
+}
+
+/* 2. The Text Content - Positioned over the SVGs */
+.header-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 7em;
+    align-items: center; /* Vertically centers text in the container */
+    padding-top: 7.5em;  /* This puts the text inside the brown area */
     font-family: "Outfit", sans-serif;
     font-weight: 600;
     font-size: 15px;
     color: whitesmoke;
+    position: relative;
+    z-index: 10; /* Ensures text is above SVGs */
 }
-.header-left{
+
+.header-left {
     margin-left: 8em;
 }
-.header-right{
+
+.header-right {
     margin-right: 9em;
-    
 }
-nav ul{
-    position: unset;
+
+nav ul {
     display: flex;
     gap: 2em;
+    list-style: none;
 }
 
-
-.ellipse-1{
+/* 3. The SVGs - Fixed sizing and positioning */
+.ellipse-1, .ellipse-2 {
     position: absolute;
-    width: 889px;
+    top: 0;
     height: 243px;
-    left: 0px;
-    top: 0px;
+    width: auto; /* Maintains aspect ratio from viewBox */
+}
+
+.ellipse-1 {
+    left: 0;
     z-index: -1;
-
 }
-.ellipse-2{
-    position: absolute;
-    width: 865px;
-    height: 243px;
-    right: 0px;
-    top: 0px;
-    z-index: -2;
 
+.ellipse-2 {
+    right: 0;
+    z-index: -2;
 }
 .box{
     position: absolute;
+    top: 0;
     z-index: -3;
     margin-left: 7em;
     margin-right: 7em;
