@@ -1,1 +1,51 @@
 @import "tailwindcss";
+@import  url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7em;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.header-left{
+    margin-left: 8em;
+}
+.header-right{
+    margin-right: 9em;
+    
+}
+nav ul{
+    position: unset;
+    display: flex;
+    gap: 2em;
+}
+
+
+.ellipse-1{
+    position: absolute;
+    width: 889px;
+    height: 243px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+}
+.ellipse-2{
+    position: absolute;
+    width: 865px;
+    height: 243px;
+    right: 0px;
+    top: 0px;
+    z-index: -2;
+
+}
+.box{
+    position: absolute;
+    z-index: -3;
+    margin-left: 7em;
+    margin-right: 7em;
+}

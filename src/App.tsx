@@ -1,19 +1,20 @@
 //import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header'
+import BODY from './components/BODY'
+import Footer from './components/Footer'
 
 function App() {
  
 
   return (
-      
-      <body>
-        <Navbar/>
-        
-      </body>
-      
-      
-    
+      <>
+      <Header />
+      <main>
+        <BODY />
+      </main>
+      <Footer />
+      </> 
   )
 }
 
